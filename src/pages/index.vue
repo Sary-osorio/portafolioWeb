@@ -1,0 +1,178 @@
+<template>
+  <!-- <v-container> -->
+    <section id="sectionPresentation">
+      <v-row>
+        <v-col class="d-flex flex-column align-center">
+          <v-img
+            src="../assets/person.jpg"
+            cover
+            class="rounded-xl bg-imagen"
+          ></v-img>
+          <div class="bg-secondary bg-imagen margin-image-secondary"></div>
+        </v-col>
+        <v-col>
+          <h1>I’M LOREMIPSU MISSIM</h1>
+          <p class="subtitle">TEXT OF THE PRINTING</p>
+          <p class="text" style="margin:40px 0px">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+          <!-- <v-btn class="btn-more-about d-flex justify-space-between">
+            <div>Mas</div>
+            <div class="btn-icon-more">
+            <span class="mdi mdi-arrow-right"></span>
+          </div>
+          </v-btn> -->
+          <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2" >
+            <template v-slot:append>
+              <span style="color: #fff !important">Más acerca de mí</span>
+              
+              <v-icon color="white" class="ms-3">
+                <span class="mdi mdi-arrow-right btn-icon-more"></span>
+              </v-icon>
+            </template>
+          </v-btn>
+          
+        </v-col>
+      </v-row>
+    </section>
+    <section id="sectionAboutMe">
+      <h2 class="mb-4 text-center">ACERCA DE MÍ</h2>
+      <v-row>
+      <v-col lg="4" class="d-flex flex-column align-center ">
+        <div class="ct-info">
+          <p>Datos personales</p>
+          <hr/>
+          <p>Nombres:</p>
+          <p>Daniela Saraí</p>
+          <p>Apellidos:</p>
+          <p>Osorio Rivas</p>
+          <p>Nacionalidad</p>
+          <p>Salvadoreña</p>
+          <p class="mt-2">Información de contacto</p>
+          <hr/>
+          <p>www.website.com</p>
+          <p>Daniela Sarai Osorio Rivas</p>
+        </div>
+      </v-col>
+      <v-col lg="8" class="d-flex flex-column align-center sectionAboutMeLine">
+        
+          <div class="d-flex align-center w-100 flex-column ">
+            <div class="d-flex align-center w-100">
+            <div class="circle">
+              <span class="mdi mdi-school"></span>
+            </div>
+            <h2 class="ms-4">EDUCACIÓN</h2>
+          </div>
+            <div class="w-100 px-16 py-8">
+            <p>INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p>
+          </div>
+          </div>
+          <div class="d-flex align-center w-100">
+            <div class="circle">
+              <span class="mdi mdi-briefcase"></span>
+            </div>
+            <h2 class="ms-4">EXPERIENCIA LABORAL</h2>
+          </div>
+        
+        
+       
+      </v-col>
+    </v-row>
+
+      </section>
+    <section id="sectionProjects">Tercera Seccion</section>
+    <section id="sectionContact">Cuarta Seccion</section>
+  <!-- </v-container> -->
+</template>
+
+<script lang="ts" setup></script>
+
+<style>
+:root {
+  --secondary: #d68800;
+}
+
+section {
+  color: #ffffff;
+  /* background-color: #000000; */
+  margin: 40px 20px;
+}
+
+#sectionPresentation h1 {
+  font-size: 55px;
+  color: var(--secondary);
+  font-weight: bold;
+  text-align:center;
+  margin-bottom:10px;
+}
+.subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-align:center;
+}
+
+.text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.bg-imagen{
+  width:400px;
+  min-height:513px;
+  border-radius: 24px;
+}
+
+.bg-secondary.bg-imagen.margin-image-secondary {
+  margin-left: -78px;
+  margin-top: -30rem;
+}
+
+/* button.v-btn.v-btn--elevated.v-theme--themefirst.v-btn--density-default.v-btn--size-default.v-btn--variant-elevated.btn-more-about {
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    min-width: 180px;
+    border-radius: 50px;
+    color: #fff;
+} */
+
+.btn-icon-more {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 9px;
+  
+}
+
+.ct-info {
+  background-color: rgb(255,255,255, 0.15); 
+   box-shadow: 4px 4px 4px 0px rgba(255,255,255, 0.38);
+   padding:30px;
+   border-radius:20px;
+}
+.ct-info p {
+ margin:10px 0px;
+}
+
+.sectionAboutMeLine{
+  border-left: 1px solid rgb(255,255,255, 0.15);
+}
+
+.circle{
+  width:75px;
+  height:75px;
+  border-radius:50px;
+  background-color: var(--secondary);
+  display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.circle span {
+    font-size: 30px;
+}
+</style>
