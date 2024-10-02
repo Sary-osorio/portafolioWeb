@@ -27,20 +27,20 @@
           <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2" >
             <template v-slot:append>
               <span style="color: #fff !important">Más acerca de mí</span>
-              
+
               <v-icon color="white" class="ms-3">
                 <span class="mdi mdi-arrow-right btn-icon-more"></span>
               </v-icon>
             </template>
           </v-btn>
-          
+
         </v-col>
       </v-row>
     </section>
     <section id="sectionAboutMe">
-      <h2 class="mb-4 text-center">ACERCA DE MÍ</h2>
+      <<p class="text-h4 font-weight-medium mb-15 text-center text-secondary ">ACERCA DE MÍ</p>>
       <v-row>
-      <v-col lg="4" class="d-flex flex-column align-center ">
+      <v-col lg="6" class="d-flex flex-column align-center " >
         <div class="ct-info">
           <p>Datos personales</p>
           <hr/>
@@ -56,35 +56,170 @@
           <p>Daniela Sarai Osorio Rivas</p>
         </div>
       </v-col>
-      <v-col lg="8" class="d-flex flex-column align-center sectionAboutMeLine">
-        
-          <div class="d-flex align-center w-100 flex-column ">
-            <div class="d-flex align-center w-100">
-            <div class="circle">
-              <span class="mdi mdi-school"></span>
+      <v-col lg="6" class="d-flex flex-column align-center " >
+
+          <div class="d-flex align-center w-100 flex-column d-border-left">
+            <div class="d-flex align-center w-100 d-ms-n1 ">
+              <div class="circle">
+                <span class="mdi mdi-school"></span>
+              </div>
+              <h2 class="ms-4 text-secondary">EDUCACIÓN</h2>
             </div>
-            <h2 class="ms-4">EDUCACIÓN</h2>
+            <div class="w-100 px-13 py-4">
+              <p class="font-weight-medium">INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+              <p>Universidad de El Salvador</p>
+              <p>2018-2024</p>
+           </div>
           </div>
-            <div class="w-100 px-16 py-8">
-            <p>INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+          <div class="d-flex align-center w-100 flex-column d-border-left">
+            <div class="d-flex align-center w-100 d-ms-n1 ">
+            <div class="circle">
+              <span class="mdi mdi-briefcase"></span>
+            </div>
+            <h2 class="ms-4 text-secondary">EXPERIENCIA LABORAL</h2>
+          </div>
+            <div class="w-100 px-13 py-4">
+            <p class="font-weight-medium">INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p><br/>
+            <p class="font-weight-medium">INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p><br/>
+            <p class="font-weight-medium">INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
             <p>Universidad de El Salvador</p>
             <p>2018-2024</p>
           </div>
           </div>
-          <div class="d-flex align-center w-100">
-            <div class="circle">
-              <span class="mdi mdi-briefcase"></span>
-            </div>
-            <h2 class="ms-4">EXPERIENCIA LABORAL</h2>
-          </div>
-        
-        
-       
+
+
+
       </v-col>
     </v-row>
 
       </section>
-    <section id="sectionProjects">Tercera Seccion</section>
+    <section id="sectionProjects">
+      <p class="text-h4 font-weight-medium mb-15 text-center text-secondary ">PROYECTOS</p>
+      <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
+      <v-row>
+      <v-col lg="6" class="d-flex flex-column align-center " >
+        <div class="ct-info">
+          <p>Lenguajes y frameworks</p>
+          <hr/>
+          <v-radio-group>
+              <v-radio label="Radio One" value="one"></v-radio>
+              <v-radio label="Radio Two" value="two"></v-radio>
+              <v-radio label="Radio Three" value="three"></v-radio>
+              <v-radio label="Radio One" value="one"></v-radio>
+              <v-radio label="Radio Two" value="two"></v-radio>
+              <v-radio label="Radio Three" value="three"></v-radio>
+              <v-radio label="Radio Two" value="two"></v-radio>
+              <v-radio label="Radio Three" value="three"></v-radio>
+          </v-radio-group>
+          <p class="mt-2">Bases de datos          </p>
+          <hr/>
+          <v-radio-group>
+              <v-radio label="Radio One" value="one"></v-radio>
+              <v-radio label="Radio Two" value="two"></v-radio>
+              <v-radio label="Radio Three" value="three"></v-radio>
+          </v-radio-group>
+        </div>
+      </v-col>
+      <v-col lg="6" class="d-flex flex-column align-center d-border-left" >
+        <v-card link variant="text" class="my-2 rounded-xl p-2" max-width="530">
+          <div class="d-flex flex-no-wrap justify-space-between">
+            <div>
+          <v-avatar
+                    class="ma-3"
+                    rounded="0"
+                    size="125"
+                  >
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"></v-img>
+                  </v-avatar>
+                </div> 
+                <div>
+                <v-card-title class="text-h5 text-secondary ">
+                 Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div> 
+              </div> 
+        </v-card>
+        <v-card link variant="text" class="my-2 rounded-xl p-2" max-width="530">
+          <div class="d-flex flex-no-wrap justify-space-between">
+            <div>
+          <v-avatar
+                    class="ma-3"
+                    rounded="0"
+                    size="125"
+                  >
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"></v-img>
+                  </v-avatar>
+                </div> 
+                <div>
+                <v-card-title class="text-h5 text-secondary ">
+                 Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div> 
+              </div> 
+        </v-card>
+        <v-card link variant="text" class="my-2 rounded-xl p-2" max-width="530">
+          <div class="d-flex flex-no-wrap justify-space-between">
+            <div>
+          <v-avatar
+                    class="ma-3"
+                    rounded="0"
+                    size="125"
+                  >
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"></v-img>
+                  </v-avatar>
+                </div> 
+                <div>
+                <v-card-title class="text-h5 text-secondary ">
+                 Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div> 
+              </div> 
+        </v-card>
+        <v-card link variant="text" class="my-2 rounded-xl p-2" max-width="530">
+          <div class="d-flex flex-no-wrap justify-space-between">
+            <div>
+          <v-avatar
+                    class="ma-3"
+                    rounded="0"
+                    size="125"
+                  >
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"></v-img>
+                  </v-avatar>
+                </div> 
+                <div>
+                <v-card-title class="text-h5 text-secondary ">
+                 Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div> 
+              </div> 
+        </v-card>
+
+
+
+
+      </v-col>
+    </v-row>
+    </section>
     <section id="sectionContact">Cuarta Seccion</section>
   <!-- </v-container> -->
 </template>
@@ -99,7 +234,7 @@
 section {
   color: #ffffff;
   /* background-color: #000000; */
-  margin: 40px 20px;
+  margin: 5rem 20px;
 }
 
 #sectionPresentation h1 {
@@ -146,20 +281,24 @@ section {
     align-items: center;
     border-radius: 50%;
     padding: 9px;
-  
+
 }
 
 .ct-info {
-  background-color: rgb(255,255,255, 0.15); 
+  background-color: rgb(255,255,255, 0.15);
    box-shadow: 4px 4px 4px 0px rgba(255,255,255, 0.38);
    padding:30px;
    border-radius:20px;
-}
-.ct-info p {
- margin:10px 0px;
+   min-width:385px;
+   min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.sectionAboutMeLine{
+
+
+.d-border-left{
   border-left: 1px solid rgb(255,255,255, 0.15);
 }
 
@@ -170,9 +309,13 @@ section {
   background-color: var(--secondary);
   display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 .circle span {
     font-size: 30px;
+}
+
+.d-ms-n1{
+  margin-left: -80px;
 }
 </style>
