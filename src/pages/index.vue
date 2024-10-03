@@ -2,15 +2,17 @@
   <!-- <v-container> -->
   <section id="sectionPresentation">
     <v-row>
-      <v-col class="d-flex flex-column align-center">
+      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center">
         <v-img
           src="../assets/person.jpg"
           cover
           class="rounded-xl bg-imagen"
+          max-height="513"
+          max-width="400"
         ></v-img>
         <div class="bg-secondary bg-imagen margin-image-secondary"></div>
       </v-col>
-      <v-col>
+      <v-col cols="12" lg="6" class="">
         <h1>I’M LOREMIPSU MISSIM</h1>
         <p class="subtitle">TEXT OF THE PRINTING</p>
         <p class="text" style="margin: 40px 0px">
@@ -37,13 +39,13 @@
     </v-row>
   </section>
   <section id="sectionAboutMe">
-    
+
     <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       ACERCA DE MÍ
     </p>
-    
+
     <v-row>
-      <v-col lg="6" class="d-flex flex-column align-center">
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <p>Datos personales</p>
           <hr />
@@ -59,8 +61,8 @@
           <p>Daniela Sarai Osorio Rivas</p>
         </div>
       </v-col>
-      <v-col lg="6" class="d-flex flex-column align-center">
-        <div class="d-flex align-center w-100 flex-column d-border-left">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
+        <div class="d-flex align-center w-100 flex-column d-border-left ">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-school"></span>
@@ -122,7 +124,7 @@
             <v-radio label="Radio One" value="one"></v-radio>
             <v-radio label="Radio Two" value="two"></v-radio>
             <v-radio label="Radio Three" value="three"></v-radio>
-            
+
           </v-radio-group>
           <p class="mt-2">Bases de datos</p>
           <hr />
@@ -251,7 +253,7 @@
       </v-col>
     </v-row>
   </section>
-  <section id="sectionContact"> 
+  <section id="sectionContact">
     <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       Cursos y certificaciones
     </p>
@@ -282,7 +284,7 @@
           radius="2"
           max-width="300"
           aspect-ratio="4/3"
-          
+
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
           class="rounded"
@@ -328,6 +330,7 @@ section {
   width: 400px;
   min-height: 513px;
   border-radius: 24px;
+
 }
 
 .bg-secondary.bg-imagen.margin-image-secondary {
@@ -384,4 +387,14 @@ section {
 .d-ms-n1 {
   margin-left: -80px;
 }
+
+@media (max-width: 1150px) {
+  .ct-info {
+  min-width: 300px;
+
+
+}
+}
+
+
 </style>

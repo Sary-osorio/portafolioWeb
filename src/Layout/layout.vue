@@ -1,10 +1,10 @@
 <template>
   <v-container fluid class="ct-main" >
     <v-row>
-      <v-col lg="11" >
+      <v-col  sm="11" >
         <router-view />
       </v-col>
-      <v-col lg="1" class="">
+      <v-col sm="1" class="">
         <Menu/>
       </v-col>
     </v-row>
