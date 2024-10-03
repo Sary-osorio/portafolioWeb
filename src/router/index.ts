@@ -7,8 +7,7 @@
 // Composables
 import Layout from '@/Layout/layout.vue'
 import Index from '@/pages/index.vue'
-import Nuevo from '@/pages/nuevo.vue'
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 // import { routes } from 'vue-router/auto-routes'
 
 const routes = [
