@@ -2,7 +2,7 @@
   <!-- <v-container> -->
   <section id="sectionPresentation">
     <v-row>
-      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center">
+      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center p-5">
         <v-img
           src="../assets/person.jpg"
           cover
@@ -39,14 +39,14 @@
     </v-row>
   </section>
   <section id="sectionAboutMe">
-
     <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       ACERCA DE MÍ
     </p>
-
     <v-row>
       <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
+          <v-row class="d-flex flex-row flex-md-column">    
+            <v-col class="d-flex  flex-column ga-5">    
           <p>Datos personales</p>
           <hr />
           <p>Nombres:</p>
@@ -55,10 +55,14 @@
           <p>Osorio Rivas</p>
           <p>Nacionalidad</p>
           <p>Salvadoreña</p>
+        </v-col>  
+        <v-col class="d-flex  flex-column ga-5">    
           <p class="mt-2">Información de contacto</p>
           <hr />
           <p>www.website.com</p>
           <p>Daniela Sarai Osorio Rivas</p>
+        </v-col>  
+        </v-row>
         </div>
       </v-col>
       <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
@@ -113,7 +117,7 @@
     </p>
     <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
     <v-row>
-      <v-col lg="6" class="d-flex flex-column align-center">
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <p>Lenguajes y frameworks</p>
           <hr />
@@ -135,15 +139,15 @@
           </v-radio-group>
         </div>
       </v-col>
-      <v-col lg="6" class="d-flex flex-column align-center">
-        <div class="d-flex align-center w-100 flex-column d-border-left">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
+        <div class="d-flex align-center w-100 flex-column d-border-left ps-2 ps-lg-0">
           <v-card
             link
             variant="text"
             class="my-2 rounded-xl p-2"
             max-width="530"
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
+              <div class="d-flex flex-no-wrap justify-space-between flex-column flex-sm-row">
               <div>
                 <v-avatar class="ma-3" rounded="0" size="125">
                   <v-img
@@ -171,7 +175,7 @@
             class="my-2 rounded-xl p-2"
             max-width="530"
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="d-flex flex-no-wrap justify-space-between flex-column flex-sm-row">
               <div>
                 <v-avatar class="ma-3" rounded="0" size="125">
                   <v-img
@@ -199,7 +203,7 @@
             class="my-2 rounded-xl p-2"
             max-width="530"
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="d-flex flex-no-wrap justify-space-between flex-column flex-sm-row">
               <div>
                 <v-avatar class="ma-3" rounded="0" size="125">
                   <v-img
@@ -257,8 +261,8 @@
     <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       Cursos y certificaciones
     </p>
-    <v-row no-gutters>
-      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+    <v-row class="">
+      <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
           max-width="300"
@@ -268,7 +272,7 @@
           class="rounded"
         ></v-img>
       </v-col>
-      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+      <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
           max-width="300"
@@ -279,7 +283,7 @@
 
         ></v-img>
       </v-col>
-      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+      <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
           max-width="300"
@@ -388,13 +392,45 @@ section {
   margin-left: -80px;
 }
 
+
+
+@media (max-width: 500px) {
+  .bg-imagen {
+        background: green;
+        max-width: 250px !important; 
+    }
+
+    #sectionPresentation h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+.text {
+  font-size: 26px;
+  
+}
+}
+@media (max-width: 960px) {
+  .ct-info {
+        min-width: auto;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        margin-bottom: 40px;
+        
+    }
+}
+
 @media (max-width: 1150px) {
   .ct-info {
   min-width: 300px;
-
-
+  
 }
 }
+
 
 
 </style>
