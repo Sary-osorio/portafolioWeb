@@ -20,6 +20,7 @@ const themefirst = {
     info: '#2cecff',
     error: '#cd0404',
     white: '#ffffff',
+    gray: '#ffffff26'
 
   },
   }

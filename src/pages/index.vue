@@ -1,49 +1,54 @@
 <template>
   <!-- <v-container> -->
-    <section id="sectionPresentation">
-      <v-row>
-        <v-col class="d-flex flex-column align-center">
-          <v-img
-            src="../assets/person.jpg"
-            cover
-            class="rounded-xl bg-imagen"
-          ></v-img>
-          <div class="bg-secondary bg-imagen margin-image-secondary"></div>
-        </v-col>
-        <v-col>
-          <h1>I’M LOREMIPSU MISSIM</h1>
-          <p class="subtitle">TEXT OF THE PRINTING</p>
-          <p class="text" style="margin:40px 0px">
-            Lorem ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem ipsum is simply dummy text of the printing and
-            typesetting industry.
-          </p>
-          <!-- <v-btn class="btn-more-about d-flex justify-space-between">
+  <section id="sectionPresentation">
+    <v-row>
+      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center">
+        <v-img
+          src="../assets/person.jpg"
+          cover
+          class="rounded-xl bg-imagen"
+          max-height="513"
+          max-width="400"
+        ></v-img>
+        <div class="bg-secondary bg-imagen margin-image-secondary"></div>
+      </v-col>
+      <v-col cols="12" lg="6" class="">
+        <h1>I’M LOREMIPSU MISSIM</h1>
+        <p class="subtitle">TEXT OF THE PRINTING</p>
+        <p class="text" style="margin: 40px 0px">
+          Lorem ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem ipsum is simply dummy text of the printing and
+          typesetting industry.
+        </p>
+        <!-- <v-btn class="btn-more-about d-flex justify-space-between">
             <div>Mas</div>
             <div class="btn-icon-more">
             <span class="mdi mdi-arrow-right"></span>
           </div>
           </v-btn> -->
-          <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2" >
-            <template v-slot:append>
-              <span style="color: #fff !important">Más acerca de mí</span>
-              
-              <v-icon color="white" class="ms-3">
-                <span class="mdi mdi-arrow-right btn-icon-more"></span>
-              </v-icon>
-            </template>
-          </v-btn>
-          
-        </v-col>
-      </v-row>
-    </section>
-    <section id="sectionAboutMe">
-      <h2 class="mb-4 text-center">ACERCA DE MÍ</h2>
-      <v-row>
-      <v-col lg="4" class="d-flex flex-column align-center ">
+        <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2">
+          <template v-slot:append>
+            <span style="color: #fff !important">Más acerca de mí</span>
+
+            <v-icon color="white" class="ms-3">
+              <span class="mdi mdi-arrow-right btn-icon-more"></span>
+            </v-icon>
+          </template>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </section>
+  <section id="sectionAboutMe">
+
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+      ACERCA DE MÍ
+    </p>
+
+    <v-row>
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <p>Datos personales</p>
-          <hr/>
+          <hr />
           <p>Nombres:</p>
           <p>Daniela Saraí</p>
           <p>Apellidos:</p>
@@ -51,41 +56,242 @@
           <p>Nacionalidad</p>
           <p>Salvadoreña</p>
           <p class="mt-2">Información de contacto</p>
-          <hr/>
+          <hr />
           <p>www.website.com</p>
           <p>Daniela Sarai Osorio Rivas</p>
         </div>
       </v-col>
-      <v-col lg="8" class="d-flex flex-column align-center sectionAboutMeLine">
-        
-          <div class="d-flex align-center w-100 flex-column ">
-            <div class="d-flex align-center w-100">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
+        <div class="d-flex align-center w-100 flex-column d-border-left ">
+          <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-school"></span>
             </div>
-            <h2 class="ms-4">EDUCACIÓN</h2>
+            <h2 class="ms-4 text-secondary">EDUCACIÓN</h2>
           </div>
-            <div class="w-100 px-16 py-8">
-            <p>INGENIERIA DE SISTEMAS INFORMÁTICOS</p>
+          <div class="w-100 px-13 py-4">
+            <p class="font-weight-medium">
+              INGENIERIA DE SISTEMAS INFORMÁTICOS
+            </p>
             <p>Universidad de El Salvador</p>
             <p>2018-2024</p>
           </div>
-          </div>
-          <div class="d-flex align-center w-100">
+        </div>
+        <div class="d-flex align-center w-100 flex-column d-border-left">
+          <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-briefcase"></span>
             </div>
-            <h2 class="ms-4">EXPERIENCIA LABORAL</h2>
+            <h2 class="ms-4 text-secondary">EXPERIENCIA LABORAL</h2>
           </div>
-        
-        
-       
+          <div class="w-100 px-13 py-4">
+            <p class="font-weight-medium">
+              INGENIERIA DE SISTEMAS INFORMÁTICOS
+            </p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p>
+            <br />
+            <p class="font-weight-medium">
+              INGENIERIA DE SISTEMAS INFORMÁTICOS
+            </p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p>
+            <br />
+            <p class="font-weight-medium">
+              INGENIERIA DE SISTEMAS INFORMÁTICOS
+            </p>
+            <p>Universidad de El Salvador</p>
+            <p>2018-2024</p>
+          </div>
+        </div>
       </v-col>
     </v-row>
+  </section>
+  <section id="sectionProjects">
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+      PROYECTOS
+    </p>
+    <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
+    <v-row>
+      <v-col lg="6" class="d-flex flex-column align-center">
+        <div class="ct-info">
+          <p>Lenguajes y frameworks</p>
+          <hr />
+          <v-radio-group>
+            <v-radio label="Radio One" value="one"></v-radio>
+            <v-radio label="Radio Two" value="two"></v-radio>
+            <v-radio label="Radio Three" value="three"></v-radio>
+            <v-radio label="Radio One" value="one"></v-radio>
+            <v-radio label="Radio Two" value="two"></v-radio>
+            <v-radio label="Radio Three" value="three"></v-radio>
 
-      </section>
-    <section id="sectionProjects">Tercera Seccion</section>
-    <section id="sectionContact">Cuarta Seccion</section>
+          </v-radio-group>
+          <p class="mt-2">Bases de datos</p>
+          <hr />
+          <v-radio-group>
+            <v-radio label="Radio One" value="one"></v-radio>
+            <v-radio label="Radio Two" value="two"></v-radio>
+            <v-radio label="Radio Three" value="three"></v-radio>
+          </v-radio-group>
+        </div>
+      </v-col>
+      <v-col lg="6" class="d-flex flex-column align-center">
+        <div class="d-flex align-center w-100 flex-column d-border-left">
+          <v-card
+            link
+            variant="text"
+            class="my-2 rounded-xl p-2"
+            max-width="530"
+          >
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-avatar class="ma-3" rounded="0" size="125">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                </v-avatar>
+              </div>
+              <div>
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
+                  cupiditate minima, at placeat totam, magni doloremque veniam
+                  neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div>
+            </div>
+          </v-card>
+          <v-card
+            link
+            variant="text"
+            class="my-2 rounded-xl p-2"
+            max-width="530"
+          >
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-avatar class="ma-3" rounded="0" size="125">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                </v-avatar>
+              </div>
+              <div>
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
+                  cupiditate minima, at placeat totam, magni doloremque veniam
+                  neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div>
+            </div>
+          </v-card>
+          <v-card
+            link
+            variant="text"
+            class="my-2 rounded-xl p-2"
+            max-width="530"
+          >
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-avatar class="ma-3" rounded="0" size="125">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                </v-avatar>
+              </div>
+              <div>
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
+                  cupiditate minima, at placeat totam, magni doloremque veniam
+                  neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div>
+            </div>
+          </v-card>
+          <!-- <v-card
+            link
+            variant="text"
+            class="my-2 rounded-xl p-2"
+            max-width="530"
+          >
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-avatar class="ma-3" rounded="0" size="125">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                </v-avatar>
+              </div>
+              <div>
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
+                  cupiditate minima, at placeat totam, magni doloremque veniam
+                  neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div>
+            </div>
+          </v-card> -->
+        </div>
+      </v-col>
+    </v-row>
+  </section>
+  <section id="sectionContact">
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+      Cursos y certificaciones
+    </p>
+    <v-row no-gutters>
+      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+        <v-img
+          radius="2"
+          max-width="300"
+          aspect-ratio="4/3"
+          cover
+          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          class="rounded"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+        <v-img
+          radius="2"
+          max-width="300"
+          aspect-ratio="4/3"
+          cover
+          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          class="rounded"
+
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="4" class="d-flex align-center justify-center">
+        <v-img
+          radius="2"
+          max-width="300"
+          aspect-ratio="4/3"
+
+          cover
+          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          class="rounded"
+        ></v-img>
+      </v-col>
+    </v-row>
+  </section>
   <!-- </v-container> -->
 </template>
 
@@ -99,20 +305,20 @@
 section {
   color: #ffffff;
   /* background-color: #000000; */
-  margin: 40px 20px;
+  margin: 5rem 20px;
 }
 
 #sectionPresentation h1 {
   font-size: 55px;
   color: var(--secondary);
   font-weight: bold;
-  text-align:center;
-  margin-bottom:10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .subtitle {
   font-size: 40px;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
 }
 
 .text {
@@ -120,10 +326,11 @@ section {
   font-weight: normal;
 }
 
-.bg-imagen{
-  width:400px;
-  min-height:513px;
+.bg-imagen {
+  width: 400px;
+  min-height: 513px;
   border-radius: 24px;
+
 }
 
 .bg-secondary.bg-imagen.margin-image-secondary {
@@ -140,39 +347,54 @@ section {
 } */
 
 .btn-icon-more {
-    background-color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 9px;
-  
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 9px;
 }
 
 .ct-info {
-  background-color: rgb(255,255,255, 0.15); 
-   box-shadow: 4px 4px 4px 0px rgba(255,255,255, 0.38);
-   padding:30px;
-   border-radius:20px;
-}
-.ct-info p {
- margin:10px 0px;
-}
-
-.sectionAboutMeLine{
-  border-left: 1px solid rgb(255,255,255, 0.15);
+  background-color: rgb(255, 255, 255, 0.15);
+  box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.38);
+  padding: 30px;
+  border-radius: 20px;
+  min-width: 385px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.circle{
-  width:75px;
-  height:75px;
-  border-radius:50px;
+.d-border-left {
+  border-left: 1px solid rgb(255, 255, 255, 0.15);
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
   background-color: var(--secondary);
   display: flex;
-    align-items: center;
-    justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
 .circle span {
-    font-size: 30px;
+  font-size: 30px;
 }
+
+.d-ms-n1 {
+  margin-left: -80px;
+}
+
+@media (max-width: 1150px) {
+  .ct-info {
+  min-width: 300px;
+
+
+}
+}
+
+
 </style>
