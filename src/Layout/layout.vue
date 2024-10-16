@@ -1,10 +1,10 @@
 <template>
   <v-container fluid class="ct-main" >
     <v-row>
-      <v-col  sm="12" >
+      <v-col  sm="11" >
         <router-view />
       </v-col>
-      <v-col class="" style="display: contents;">
+      <v-col sm="1" class="">
         <Menu/>
       </v-col>
     </v-row>
@@ -13,39 +13,31 @@
   class="bg-primary text-center d-flex flex-column"
   >
   <v-divider class="border-opacity-100" color="secondary" width="100%"></v-divider>
-    <div class="d-flex flex-column justify-center my-2  px-4 w-100">
+    <div class="d-flex justify-space-between my-2  px-4 w-100">
+      <div class="">
+      {{ new Date().getFullYear() }} — <strong>Hecho con <span class="mdi mdi-heart"></span> por Daniela Osorio</strong>
+    </div>
       <div>
-        <a href="javascript:void(0)" class="text-white mx-2">
-          <span class="mdi mdi-linkedin social-media"></span>
-        </a>
-        <a href="javascript:void(0)" class="text-white mx-2">
-          <span class="mdi mdi-github social-media"></span>
-        </a>
-        <a href="javascript:void(0)" class="text-white mx-2">
-          <span class="mdi mdi-codepen social-media"></span>
-        </a>
-      <!-- <v-btn
-        class="mx-2"
+      <v-btn
+        class="mx-4"
         variant="text"
       >
       <span class="mdi mdi-linkedin social-media"></span>
-      </v-btn> -->
-      <!-- <v-btn
-        class=""
+      </v-btn>
+      <v-btn
+        class="mx-4"
         variant="text"
       >
       <span class="mdi mdi-github social-media"></span>
     </v-btn>
       <v-btn
-        class="mx-2"
+        class="mx-4"
         variant="text"
       >
       <span class="mdi mdi-codepen social-media"></span>
-    </v-btn> -->
+    </v-btn>
   </div>
-  <div class="mt-2">
-      {{ new Date().getFullYear() }} — <strong>Hecho con <span class="mdi mdi-heart"></span> por Daniela Osorio</strong>
-    </div>
+
     </div>
 
 
