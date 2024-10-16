@@ -1,5 +1,5 @@
 <template>
-  <v-container class="ct-menu">
+  
     <ul>
       <li class="nav-item">
         <a href="#sectionPresentation"><span class="mdi mdi-home"></span></a>
@@ -18,7 +18,7 @@
         ><span class="nav-item-title">Contacto</span>
       </li>
     </ul>
-  </v-container>
+  
 </template>
 
 <script></script>
@@ -31,7 +31,8 @@
   align-items: center;
 }
 
-.ct-menu ul {
+/* .ct-menu */
+ ul {
   position: fixed;
   top: 50%;
   right: 30px;
