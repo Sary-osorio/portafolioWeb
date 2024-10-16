@@ -1,12 +1,13 @@
 <template>
   <!-- <v-container> -->
   <section id="sectionPresentation">
+    <v-container>
     <v-row>
-      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center p-5">
+      <v-col cols="12" lg="6"  class="d-flex flex-column align-start justify-center p-5">
         <v-img
           src="../assets/person.jpg"
           cover
-          class="rounded-xl bg-imagen"
+          class="rounded-xl bg-imagen ms-10 mb-2"
           max-height="513"
           max-width="400"
         ></v-img>
@@ -37,36 +38,109 @@
         </v-btn>
       </v-col>
     </v-row>
+  </v-container>
   </section>
   <section id="sectionAboutMe">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+
+    <v-container>
+      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
       ACERCA DE MÍ
     </p>
     <v-row>
-      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-start">
         <div class="ct-info">
-          <v-row class="d-flex flex-row flex-md-column">    
-            <v-col class="d-flex  flex-column ga-5">    
-          <p>Datos personales</p>
-          <hr />
-          <p>Nombres:</p>
-          <p>Daniela Saraí</p>
-          <p>Apellidos:</p>
-          <p>Osorio Rivas</p>
-          <p>Nacionalidad</p>
-          <p>Salvadoreña</p>
-        </v-col>  
-        <v-col class="d-flex  flex-column ga-5">    
-          <p class="mt-2">Información de contacto</p>
-          <hr />
-          <p>www.website.com</p>
-          <p>Daniela Sarai Osorio Rivas</p>
-        </v-col>  
+          <v-row class="d-flex flex-row flex-md-column">
+            <v-col class="d-flex  flex-column ga-5">
+          <p class="text-h6">Hola <span class="mdi mdi-hand-wave" style="color: var(--secondary); "></span></p>
+
+          <p> Lorem ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem ipsum is simply dummy text of the printing and
+          typesetting industry typesetting industry typesetting industry typesetting industry.Lorem ipsum is simply dummy text of the printing and typesetting
+          industry</p>
+          <p class="font-weight-medium text-h6">Habilidades técnicas</p>
+          <hr class=""/>
+          <div class="text-center">
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-language-php" start></v-icon>
+            PHP
+          </v-chip>
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-laravel" start></v-icon>
+            LARAVEL
+          </v-chip>
+          <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-react" start></v-icon>
+            ReactJS
+          </v-chip>
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-vuejs" start></v-icon>
+            VUEJS
+          </v-chip>
+            
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-wordpress" start></v-icon>
+            WORDPRESS
+          </v-chip>
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-school" start>
+            </v-icon>
+          MOODLE
+          </v-chip>
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-database-outline" start></v-icon>
+            MySQL
+          </v-chip>
+            <v-chip
+            class="ma-2"
+            color="secondary2"
+            label
+            size="large"
+          >
+            <v-icon icon="mdi mdi-database-outline" start></v-icon>
+            PostgreSQL
+          </v-chip>
+          </div>
+        </v-col>
         </v-row>
         </div>
       </v-col>
-      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
-        <div class="d-flex align-center w-100 flex-column d-border-left ">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center">
+        <div class="d-flex align-center w-100 flex-column d-border-left ms-80">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-school"></span>
@@ -81,7 +155,7 @@
             <p>2018-2024</p>
           </div>
         </div>
-        <div class="d-flex align-center w-100 flex-column d-border-left">
+        <div class="d-flex align-center w-100 flex-column d-border-left ms-80">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-briefcase"></span>
@@ -110,13 +184,208 @@
         </div>
       </v-col>
     </v-row>
+  </v-container>
   </section>
   <section id="sectionProjects">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+
+    <v-container>
+      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
       PROYECTOS
     </p>
-    <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
-    <v-row>
+    <v-row
+     align="center"
+    >
+      <v-col align-self="center">
+        <v-card
+            elevation="16"
+            color="primary"
+            class="my-2 rounded-xl p-2"
+            max-width="300"
+          >
+                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
+                  <v-img
+                  height="150px"
+                  cover
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                <!-- </v-avatar> -->
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus!
+                </v-card-text>
+                <v-card-actions>
+                  <div class="d-flex  w-100 flex-column">
+                  <div class="d-flex ga-2 w-100 justify-center">
+                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
+                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
+                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
+                  </div>
+                  <div class="d-flex ga-2 w-100 justify-center mt-4">
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
+                      </a>
+                    </div>
+
+                  </div>
+                  </div>
+                </v-card-actions>
+
+          </v-card>
+      </v-col>
+      <v-col align-self="center">
+        <v-card
+            elevation="16"
+            color="primary"
+            class="my-2 rounded-xl p-2"
+            max-width="300"
+          >
+                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
+                  <v-img
+                  height="150px"
+                  cover
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                <!-- </v-avatar> -->
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus!
+                </v-card-text>
+
+                <v-card-actions>
+                  <div class="d-flex  w-100 flex-column">
+                  <div class="d-flex ga-2 w-100 justify-center">
+                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
+                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
+                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
+                  </div>
+                  <div class="d-flex ga-2 w-100 justify-center mt-4">
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
+                      </a>
+                    </div>
+
+                  </div>
+                  </div>
+                </v-card-actions>
+          </v-card>
+      </v-col>
+      <v-col align-self="center">
+        <v-card
+            elevation="16"
+            color="primary"
+            class="my-2 rounded-xl p-2"
+            max-width="300"
+          >
+                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
+                  <v-img
+                  height="150px"
+                  cover
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                <!-- </v-avatar> -->
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus!
+                </v-card-text>
+                <v-card-actions>
+                  <div class="d-flex  w-100 flex-column">
+                  <div class="d-flex ga-2 w-100 justify-center">
+                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
+                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
+                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
+                  </div>
+                  <div class="d-flex ga-2 w-100 justify-center mt-4">
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
+                      </a>
+                    </div>
+
+                  </div>
+                  </div>
+                </v-card-actions>
+          </v-card>
+      </v-col>
+      <v-col align-self="center">
+        <v-card
+            elevation="16"
+            color="primary"
+            class="my-2 rounded-xl p-2"
+            max-width="300"
+          >
+                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
+                  <v-img
+                  height="150px"
+                    cover
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                <!-- </v-avatar> -->
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus!
+                </v-card-text>
+                <v-card-actions>
+                  <div class="d-flex  w-100 flex-column">
+                  <div class="d-flex ga-2 w-100 justify-center">
+                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
+                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
+                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
+                  </div>
+                  <div class="d-flex ga-2 w-100 justify-center mt-4">
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="javascript:void(0)">
+                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
+                      </a>
+                    </div>
+
+                  </div>
+                  </div>
+                </v-card-actions>
+          </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+
+
+    <!-- <v-row>
       <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <p>Lenguajes y frameworks</p>
@@ -145,7 +414,7 @@
             link
             variant="text"
             class="my-2 rounded-xl p-2"
-            max-width="530"
+            max-width="500"
           >
               <div class="d-flex flex-no-wrap justify-space-between flex-column flex-sm-row">
               <div>
@@ -225,47 +494,20 @@
               </div>
             </div>
           </v-card>
-          <!-- <v-card
-            link
-            variant="text"
-            class="my-2 rounded-xl p-2"
-            max-width="530"
-          >
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
-                <v-avatar class="ma-3" rounded="0" size="125">
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                  ></v-img>
-                </v-avatar>
-              </div>
-              <div>
-                <v-card-title class="text-h5 text-secondary">
-                  Unlimited music now
-                </v-card-title>
-
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
-                  cupiditate minima, at placeat totam, magni doloremque veniam
-                  neque porro libero rerum unde voluptatem
-                </v-card-text>
-              </div>
-            </div>
-          </v-card> -->
         </div>
       </v-col>
-    </v-row>
+    </v-row> -->
   </section>
   <section id="sectionContact">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
-      Cursos y certificaciones
+    <v-container>
+      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
+      CURSOS Y CERTIFICACIONES
     </p>
-    <v-row class="">
+    <v-row>
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -275,7 +517,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -286,7 +528,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+
           aspect-ratio="4/3"
 
           cover
@@ -295,11 +537,19 @@
         ></v-img>
       </v-col>
     </v-row>
+  </v-container>
   </section>
   <!-- </v-container> -->
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+   import {computed } from 'vue'
+
+   const iconmoodle = computed(()=>{
+    return 
+   })
+
+</script>
 
 <style>
 :root {
@@ -309,11 +559,11 @@
 section {
   color: #ffffff;
   /* background-color: #000000; */
-  margin: 5rem 20px;
+  margin: 3rem 0px 5rem;
 }
 
 #sectionPresentation h1 {
-  font-size: 55px;
+  font-size: 50px;
   color: var(--secondary);
   font-weight: bold;
   text-align: center;
@@ -338,7 +588,7 @@ section {
 }
 
 .bg-secondary.bg-imagen.margin-image-secondary {
-  margin-left: -78px;
+  /* margin-left: -50px; */
   margin-top: -30rem;
 }
 
@@ -364,8 +614,8 @@ section {
   box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.38);
   padding: 30px;
   border-radius: 20px;
-  min-width: 385px;
   min-height: 550px;
+  max-width:440px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -373,6 +623,9 @@ section {
 
 .d-border-left {
   border-left: 1px solid rgb(255, 255, 255, 0.15);
+}
+.ms-80{
+  margin-left:80px;
 }
 
 .circle {
@@ -397,7 +650,7 @@ section {
 @media (max-width: 500px) {
   .bg-imagen {
         background: green;
-        max-width: 250px !important; 
+        max-width: 250px !important;
     }
 
     #sectionPresentation h1 {
@@ -410,7 +663,7 @@ section {
 
 .text {
   font-size: 26px;
-  
+
 }
 }
 @media (max-width: 960px) {
@@ -420,14 +673,14 @@ section {
         height: auto;
         min-height: auto;
         margin-bottom: 40px;
-        
+
     }
 }
 
 @media (max-width: 1150px) {
   .ct-info {
   min-width: 300px;
-  
+
 }
 }
 
