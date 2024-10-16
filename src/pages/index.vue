@@ -96,7 +96,7 @@
             <v-icon icon="mdi mdi-vuejs" start></v-icon>
             VUEJS
           </v-chip>
-            
+
             <v-chip
             class="ma-2"
             color="secondary2"
@@ -543,11 +543,7 @@
 </template>
 
 <script lang="ts" setup>
-   import {computed } from 'vue'
 
-   const iconmoodle = computed(()=>{
-    return 
-   })
 
 </script>
 
