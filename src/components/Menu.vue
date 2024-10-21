@@ -1,7 +1,21 @@
 <template>
-  
-    <ul>
-      <li class="nav-item">
+
+    <ul class="menu-desktop">
+      <li
+      v-for="(item, index) in menuItems"
+      :key="index"
+      :class="['nav-item', { active: activeIndex === index }]"
+      @click="setActive(index)"
+      >
+
+      <a :href="item.href">
+        <span :class="item.icon"></span>
+      </a>
+
+      <span class="nav-item-title">{{ item.title }}</span>
+
+    </li>
+      <!-- <li class="nav-item active">
         <a href="#sectionPresentation"><span class="mdi mdi-home"></span></a>
       </li>
       <li class="nav-item">
@@ -16,12 +30,39 @@
         <a href="#sectionContact"
           ><span class="mdi mdi-message-reply-text"></span></a
         ><span class="nav-item-title">Contacto</span>
-      </li>
+      </li> -->
     </ul>
-  
+
 </template>
 
-<script></script>
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+
+const menuItems = ref([
+  { title: 'Home', href: '#sectionPresentation', icon: 'mdi mdi-home' },
+  { title: 'Acerca de mí', href: '#sectionAboutMe', icon: 'mdi mdi-account' },
+  { title: 'Mis proyectos', href: '#sectionProjects', icon: 'mdi mdi-briefcase' },
+  { title: 'Cursos', href: '#sectionContact', icon: 'mdi mdi-message-reply-text' }
+]);
+
+const activeIndex = ref(0);
+
+const setActive = (index: number) => {
+  activeIndex.value = index;
+  const element = document.querySelector(menuItems.value[index].href);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    history.pushState(null, '', menuItems.value[index].href);
+  }
+};
+
+    onMounted(()=>{
+      setActive(0);
+    })
+
+
+
+</script>
 
 <style>
 .ct-menu {
@@ -32,11 +73,13 @@
 }
 
 /* .ct-menu */
- ul {
+.menu-desktop {
   position: fixed;
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
+  display: block;
+  overflow: auto;
 }
 
 .nav-item {
@@ -60,6 +103,10 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+}
+
+.active a{
+  background-color: #986b19;
 }
 
 .nav-item a span  {
@@ -98,6 +145,8 @@
 .nav-item:hover a {
   background-color: #986b19;
 }
+
+
 
 
 </style>
