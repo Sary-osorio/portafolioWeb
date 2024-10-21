@@ -1,13 +1,12 @@
 <template>
   <!-- <v-container> -->
   <section id="sectionPresentation">
-    <v-container>
     <v-row>
-      <v-col cols="12" lg="6"  class="d-flex flex-column align-start justify-center p-5">
+      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center p-5">
         <v-img
           src="../assets/person.jpg"
           cover
-          class="rounded-xl bg-imagen ms-10 mb-2"
+          class="rounded-xl bg-imagen"
           max-height="513"
           max-width="400"
         ></v-img>
@@ -38,16 +37,13 @@
         </v-btn>
       </v-col>
     </v-row>
-  </v-container>
   </section>
   <section id="sectionAboutMe">
-
-    <v-container>
-      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       ACERCA DE MÍ
     </p>
     <v-row>
-      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-start">
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <v-row class="d-flex flex-row flex-md-column">
             <v-col class="d-flex  flex-column ga-5">
@@ -139,8 +135,8 @@
         </v-row>
         </div>
       </v-col>
-      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center">
-        <div class="d-flex align-center w-100 flex-column d-border-left ms-80">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
+        <div class="d-flex align-center w-100 flex-column d-border-left ">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-school"></span>
@@ -155,7 +151,7 @@
             <p>2018-2024</p>
           </div>
         </div>
-        <div class="d-flex align-center w-100 flex-column d-border-left ms-80">
+        <div class="d-flex align-center w-100 flex-column d-border-left">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-briefcase"></span>
@@ -184,208 +180,13 @@
         </div>
       </v-col>
     </v-row>
-  </v-container>
   </section>
   <section id="sectionProjects">
-
-    <v-container>
-      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
       PROYECTOS
     </p>
-    <v-row
-     align="center"
-    >
-      <v-col align-self="center">
-        <v-card
-            elevation="16"
-            color="primary"
-            class="my-2 rounded-xl p-2"
-            max-width="300"
-          >
-                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
-                  <v-img
-                  height="150px"
-                  cover
-                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                  ></v-img>
-                <!-- </v-avatar> -->
-                <v-card-title class="text-h5 text-secondary">
-                  Unlimited music now
-                </v-card-title>
-
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, ratione debitis quis est labore voluptatibus!
-                </v-card-text>
-                <v-card-actions>
-                  <div class="d-flex  w-100 flex-column">
-                  <div class="d-flex ga-2 w-100 justify-center">
-                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
-                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
-                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
-                  </div>
-                  <div class="d-flex ga-2 w-100 justify-center mt-4">
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
-                      </a>
-                    </div>
-
-                  </div>
-                  </div>
-                </v-card-actions>
-
-          </v-card>
-      </v-col>
-      <v-col align-self="center">
-        <v-card
-            elevation="16"
-            color="primary"
-            class="my-2 rounded-xl p-2"
-            max-width="300"
-          >
-                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
-                  <v-img
-                  height="150px"
-                  cover
-                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                  ></v-img>
-                <!-- </v-avatar> -->
-                <v-card-title class="text-h5 text-secondary">
-                  Unlimited music now
-                </v-card-title>
-
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, ratione debitis quis est labore voluptatibus!
-                </v-card-text>
-
-                <v-card-actions>
-                  <div class="d-flex  w-100 flex-column">
-                  <div class="d-flex ga-2 w-100 justify-center">
-                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
-                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
-                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
-                  </div>
-                  <div class="d-flex ga-2 w-100 justify-center mt-4">
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
-                      </a>
-                    </div>
-
-                  </div>
-                  </div>
-                </v-card-actions>
-          </v-card>
-      </v-col>
-      <v-col align-self="center">
-        <v-card
-            elevation="16"
-            color="primary"
-            class="my-2 rounded-xl p-2"
-            max-width="300"
-          >
-                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
-                  <v-img
-                  height="150px"
-                  cover
-                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                  ></v-img>
-                <!-- </v-avatar> -->
-                <v-card-title class="text-h5 text-secondary">
-                  Unlimited music now
-                </v-card-title>
-
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, ratione debitis quis est labore voluptatibus!
-                </v-card-text>
-                <v-card-actions>
-                  <div class="d-flex  w-100 flex-column">
-                  <div class="d-flex ga-2 w-100 justify-center">
-                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
-                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
-                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
-                  </div>
-                  <div class="d-flex ga-2 w-100 justify-center mt-4">
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
-                      </a>
-                    </div>
-
-                  </div>
-                  </div>
-                </v-card-actions>
-          </v-card>
-      </v-col>
-      <v-col align-self="center">
-        <v-card
-            elevation="16"
-            color="primary"
-            class="my-2 rounded-xl p-2"
-            max-width="300"
-          >
-                <!-- <v-avatar class="ma-3" rounded="0" size="125"> -->
-                  <v-img
-                  height="150px"
-                    cover
-                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                  ></v-img>
-                <!-- </v-avatar> -->
-                <v-card-title class="text-h5 text-secondary">
-                  Unlimited music now
-                </v-card-title>
-
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, ratione debitis quis est labore voluptatibus!
-                </v-card-text>
-                <v-card-actions>
-                  <div class="d-flex  w-100 flex-column">
-                  <div class="d-flex ga-2 w-100 justify-center">
-                    <div style="width:60px; background:#E34F28; border-radius:5px; text-align:center;">HTML</div>
-                    <div style="width:60px; background:#1477B8; border-radius:5px; text-align:center;">CSS</div>
-                    <div style="width:60px; background:#F7E025; border-radius:5px; text-align:center;">JS</div>
-                  </div>
-                  <div class="d-flex ga-2 w-100 justify-center mt-4">
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-github" style="color:#fff; font-size:25px;"></span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="javascript:void(0)">
-                        <span class="mdi mdi-link" style="color:#fff; font-size:30px;"></span>
-                      </a>
-                    </div>
-
-                  </div>
-                  </div>
-                </v-card-actions>
-          </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
-
-
-    <!-- <v-row>
+    <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
+    <v-row>
       <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
         <div class="ct-info">
           <p>Lenguajes y frameworks</p>
@@ -414,7 +215,7 @@
             link
             variant="text"
             class="my-2 rounded-xl p-2"
-            max-width="500"
+            max-width="530"
           >
               <div class="d-flex flex-no-wrap justify-space-between flex-column flex-sm-row">
               <div>
@@ -494,20 +295,47 @@
               </div>
             </div>
           </v-card>
+          <!-- <v-card
+            link
+            variant="text"
+            class="my-2 rounded-xl p-2"
+            max-width="530"
+          >
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-avatar class="ma-3" rounded="0" size="125">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                  ></v-img>
+                </v-avatar>
+              </div>
+              <div>
+                <v-card-title class="text-h5 text-secondary">
+                  Unlimited music now
+                </v-card-title>
+
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, ratione debitis quis est labore voluptatibus! Eaque
+                  cupiditate minima, at placeat totam, magni doloremque veniam
+                  neque porro libero rerum unde voluptatem
+                </v-card-text>
+              </div>
+            </div>
+          </v-card> -->
         </div>
       </v-col>
-    </v-row> -->
+    </v-row>
   </section>
   <section id="sectionContact">
-    <v-container>
-      <p class="text-h4 font-weight-medium mb-15 text-start text-secondary">
-      CURSOS Y CERTIFICACIONES
+    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+      Cursos y certificaciones
     </p>
-    <v-row>
+    <v-row class="">
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-
+          max-width="300"
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -517,7 +345,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-
+          max-width="300"
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -528,7 +356,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-
+          max-width="300"
           aspect-ratio="4/3"
 
           cover
@@ -537,11 +365,11 @@
         ></v-img>
       </v-col>
     </v-row>
-  </v-container>
   </section>
   <!-- </v-container> -->
 </template>
 
+<script lang="ts" setup></script>
 <script lang="ts" setup>
 
 
@@ -555,11 +383,11 @@
 section {
   color: #ffffff;
   /* background-color: #000000; */
-  margin: 3rem 0px 5rem;
+  margin: 5rem 20px;
 }
 
 #sectionPresentation h1 {
-  font-size: 50px;
+  font-size: 55px;
   color: var(--secondary);
   font-weight: bold;
   text-align: center;
@@ -584,7 +412,7 @@ section {
 }
 
 .bg-secondary.bg-imagen.margin-image-secondary {
-  /* margin-left: -50px; */
+  margin-left: -78px;
   margin-top: -30rem;
 }
 
@@ -610,8 +438,8 @@ section {
   box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.38);
   padding: 30px;
   border-radius: 20px;
+  min-width: 385px;
   min-height: 550px;
-  max-width:440px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -619,9 +447,6 @@ section {
 
 .d-border-left {
   border-left: 1px solid rgb(255, 255, 255, 0.15);
-}
-.ms-80{
-  margin-left:80px;
 }
 
 .circle {
