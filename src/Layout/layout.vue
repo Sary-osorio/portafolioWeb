@@ -53,6 +53,9 @@ import Menu from '@/components/Menu.vue';
 <style >
 .social-media{
   font-size: 1.5rem;
+}
+.ct-main{
+  scroll-behavior: smooth;
 
 }
 </style>

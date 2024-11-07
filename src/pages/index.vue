@@ -2,7 +2,7 @@
   <!-- <v-container> -->
   <section id="sectionPresentation">
     <v-row>
-      <v-col cols="12" lg="6"  class="d-flex flex-column align-center justify-center p-5">
+      <v-col cols="12" md="6"  class="d-flex flex-column align-center align-md-start justify-center p-5 ">
         <v-img
           src="../assets/person.jpg"
           cover
@@ -12,9 +12,9 @@
         ></v-img>
         <div class="bg-secondary bg-imagen margin-image-secondary"></div>
       </v-col>
-      <v-col cols="12" lg="6" class="">
-        <h1>I’M LOREMIPSU MISSIM</h1>
-        <p class="subtitle">TEXT OF THE PRINTING</p>
+      <v-col cols="12" md="6" class="text-center text-md-start">
+        <p class="text-h4 text-lg-h3 mb-4 font-weight-bold text-center text-secondary">I’M LOREMIPSU MISSIM</p>
+        <p class="text-h5 text-lg-h4 font-weight-medium text-center">TEXT OF THE PRINTING</p>
         <p class="text" style="margin: 40px 0px">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry. Lorem ipsum is simply dummy text of the printing and
@@ -26,7 +26,7 @@
             <span class="mdi mdi-arrow-right"></span>
           </div>
           </v-btn> -->
-        <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2">
+        <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2 ">
           <template v-slot:append>
             <span style="color: #fff !important">Más acerca de mí</span>
 
@@ -39,11 +39,13 @@
     </v-row>
   </section>
   <section id="sectionAboutMe">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+
+    <v-container class="">
+      <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
       ACERCA DE MÍ
     </p>
     <v-row>
-      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center">
+      <v-col cols="12" md="5" lg="6" class="d-flex flex-column align-center align-md-start">
         <div class="ct-info">
           <v-row class="d-flex flex-row flex-md-column">
             <v-col class="d-flex  flex-column ga-5">
@@ -135,13 +137,13 @@
         </v-row>
         </div>
       </v-col>
-      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center px-10 px-lg-0">
-        <div class="d-flex align-center w-100 flex-column d-border-left ">
+      <v-col cols="12" md="7" lg="6" class="d-flex flex-column align-center">
+        <div class="d-flex align-center w-100 flex-column d-border-left ms-80 mxw-500" >
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-school"></span>
             </div>
-            <h2 class="ms-4 text-secondary">EDUCACIÓN</h2>
+            <p class="text-h6 text-md-h5 ms-4 text-secondary font-weight-medium">EDUCACIÓN</p>
           </div>
           <div class="w-100 px-13 py-4">
             <p class="font-weight-medium">
@@ -151,12 +153,12 @@
             <p>2018-2024</p>
           </div>
         </div>
-        <div class="d-flex align-center w-100 flex-column d-border-left">
+        <div class="d-flex align-center w-100 flex-column d-border-left ms-80 mxw-500">
           <div class="d-flex align-center w-100 d-ms-n1">
             <div class="circle">
               <span class="mdi mdi-briefcase"></span>
             </div>
-            <h2 class="ms-4 text-secondary">EXPERIENCIA LABORAL</h2>
+            <p class=" text-h6 text-md-h ms-4 text-secondary font-weight-medium">EXPERIENCIA LABORAL</p>
           </div>
           <div class="w-100 px-13 py-4">
             <p class="font-weight-medium">
@@ -182,7 +184,9 @@
     </v-row>
   </section>
   <section id="sectionProjects">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
+
+    <v-container>
+      <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
       PROYECTOS
     </p>
     <!-- <h2 class="mb-4 text-center">Proyectos</h2> -->
@@ -328,14 +332,15 @@
     </v-row>
   </section>
   <section id="sectionContact">
-    <p class="text-h4 font-weight-medium mb-15 text-center text-secondary">
-      Cursos y certificaciones
+    <v-container>
+      <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
+      CURSOS Y CERTIFICACIONES
     </p>
     <v-row class="">
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+          max-width="400"
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -345,7 +350,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+          max-width="400"
           aspect-ratio="4/3"
           cover
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
@@ -356,7 +361,7 @@
       <v-col cols="12" md="4" class="d-flex align-center justify-center p-2">
         <v-img
           radius="2"
-          max-width="300"
+          max-width="400"
           aspect-ratio="4/3"
 
           cover
@@ -379,6 +384,8 @@
 :root {
   --secondary: #d68800;
 }
+
+
 
 section {
   color: #ffffff;
@@ -408,7 +415,6 @@ section {
   width: 400px;
   min-height: 513px;
   border-radius: 24px;
-
 }
 
 .bg-secondary.bg-imagen.margin-image-secondary {
@@ -466,12 +472,52 @@ section {
   margin-left: -80px;
 }
 
+.mxw-500{
+  max-width: auto;
+}
 
+@media (max-width: 1280px) {
+  .bg-imagen {
+  width: 80%;
+  min-height: 400px;
+  max-height: 400px !important;
+}
+
+.bg-secondary.bg-imagen.margin-image-secondary {
+    margin-top: -23rem;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 40px;
+}
+}
+
+@media (max-width: 960px) {
+  .ct-info {
+        min-width: auto;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        margin-bottom: 40px;
+
+    }
+
+    .bg-imagen {
+        max-width: 400px;
+    }
+
+    .mxw-500{
+      max-width: 500px;
+    }
+}
 
 @media (max-width: 500px) {
   .bg-imagen {
-        background: green;
-        max-width: 250px !important;
+      max-width: 300px;
+      min-height: 300px;
+      max-height: 300px !important;
     }
 
     #sectionPresentation h1 {
@@ -486,25 +532,19 @@ section {
   font-size: 26px;
 
 }
-}
-@media (max-width: 960px) {
-  .ct-info {
-        min-width: auto;
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        margin-bottom: 40px;
 
+.bg-secondary.bg-imagen.margin-image-secondary {
+        margin-top: -17rem;
+        margin-left: -2rem;
     }
+
+    .circle {
+    width: 60px;
+    height: 60px;
 }
-
-@media (max-width: 1150px) {
-  .ct-info {
-  min-width: 300px;
-
+.ms-80 {
+    margin-left: 64px;
 }
 }
-
-
 
 </style>
