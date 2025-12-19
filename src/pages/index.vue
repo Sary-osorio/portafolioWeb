@@ -1,7 +1,7 @@
 <template>
   <!-- <v-container> -->
   <section id="sectionPresentation">
-    <v-container>
+    <v-container max-width="1200px">
     <v-row>
       <v-col cols="12" md="6"  class="d-flex flex-column align-center align-md-start justify-center p-5 ">
         <v-img
@@ -27,7 +27,7 @@
             <span class="mdi mdi-arrow-right"></span>
           </div>
           </v-btn> -->
-        <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2 ">
+        <!-- <v-btn variant="outlined" color="secondary" class="rounded-xl pe-2 ">
           <template v-slot:append>
             <span style="color: #fff !important">Más acerca de mí</span>
 
@@ -35,14 +35,26 @@
               <span class="mdi mdi-arrow-right btn-icon-more"></span>
             </v-icon>
           </template>
+        </v-btn> -->
+        <v-btn
+          class="btn-about"
+
+          rounded="pill"
+          size="large"
+          elevation="6"
+          color="secondary"
+        >
+          Más acerca de mí
+          <v-icon end>mdi-arrow-right</v-icon>
         </v-btn>
+
       </v-col>
     </v-row>
   </v-container>
   </section>
   <section id="sectionAboutMe">
 
-    <v-container class="">
+    <v-container max-width="1200px">
       <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
       ACERCA DE MÍ
     </p>
@@ -186,14 +198,13 @@
     </v-row>
   </v-container>
   </section>
-  <section id="sectionProjects">
+  <section id="sectionProjects" >
 
-    <v-container>
+    <v-container max-width="1200px">
       <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
       PROYECTOS
     </p>
-    <v-row
-     align="center"
+    <v-row align="center"
     >
       <v-col align-self="center">
         <v-card
@@ -499,7 +510,7 @@
     </v-row> -->
   </section>
   <section id="sectionContact">
-    <v-container>
+    <v-container max-width="1200px">
       <p class="text-h5 text-sm-h4 font-weight-medium mb-15 text-center text-md-start text-secondary">
       CURSOS Y CERTIFICACIONES
     </p>
@@ -645,6 +656,26 @@ section {
 .mxw-500{
   max-width: auto;
 }
+
+.btn-about {
+  letter-spacing: 0.05em;
+  padding: 0 28px;
+  transition: all 0.3s ease;
+}
+
+.btn-about:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.4);
+}
+
+.btn-about .v-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-about:hover .v-icon {
+  transform: translateX(6px);
+}
+
 
 @media (max-width: 1280px) {
   .bg-imagen {
