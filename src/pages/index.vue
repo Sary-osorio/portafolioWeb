@@ -14,7 +14,7 @@
         <div class="bg-secondary bg-imagen margin-image-secondary"></div>
       </v-col>
       <v-col cols="12" md="6" class="text-center text-md-start">
-        <p class="text-h4 text-lg-h3 mb-4 font-weight-bold text-center text-secondary">I’M LOREMIPSU MISSIM</p>
+        <p class="text-h4 text-lg-h3 mb-4 font-weight-bold text-center text-secondary">HI, I’M LOREMIPSU MISSIM</p>
         <p class="text-h5 text-lg-h4 font-weight-medium text-center">TEXT OF THE PRINTING</p>
         <p class="text" style="margin: 40px 0px">
           Lorem ipsum is simply dummy text of the printing and typesetting
